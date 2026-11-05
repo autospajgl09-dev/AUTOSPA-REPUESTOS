@@ -89,5 +89,12 @@
     "categoria": "Limpieza",
     "precio": "$14000",
     "foto": "imagenes/shampoo-para-auto-1793910957223.jpg"
+  },
+  {
+    "nombre": "AMBIENTADOR",
+    "vehiculo": "AUTOSPA",
+    "categoria": "Limpieza",
+    "precio": "$4000",
+    "foto": "imagenes/ambientador-1793911507375.jpg"
   }
 ]
