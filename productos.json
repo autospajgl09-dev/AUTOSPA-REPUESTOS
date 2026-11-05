@@ -47,5 +47,12 @@
     "categoria": "Limpieza",
     "precio": "$8000",
     "foto": "imagenes/liquido-de-frenos-dot-3-lf3-1793910075002.jpg"
+  },
+  {
+    "nombre": "LIQUIDO DE FRENOS DOT 4/LF4",
+    "vehiculo": "PRESTONE",
+    "categoria": "Limpieza",
+    "precio": "$8000",
+    "foto": "imagenes/liquido-de-frenos-dot-4-lf4-1793910446371.jpg"
   }
 ]
