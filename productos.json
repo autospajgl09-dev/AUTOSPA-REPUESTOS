@@ -34,5 +34,11 @@
     "vehiculo": "CHEVROLET SONIC 2012-2018",
     "precio": "$199900",
     "foto": "imagenes/optico-delantero-derecho-1793891737763.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO DERECHO",
+    "vehiculo": "FORD FUSION 2013-2016",
+    "precio": "$200000",
+    "foto": "imagenes/optico-delantero-derecho-1793892105749.jpg"
   }
 ]
