@@ -58,5 +58,11 @@
     "vehiculo": "VOLKSWAGEN GOL 2018",
     "precio": "$90000",
     "foto": "imagenes/optico-delantero-izquierdo-1793892405042.jpg"
+  },
+  {
+    "nombre": "NEBLINERO DERECHO E IZQUIERDO",
+    "vehiculo": "HYUNDAI CRETA 2016-2018",
+    "precio": "$99990",
+    "foto": "imagenes/neblinero-derecho-e-izquierdo-1793892577583.jpg"
   }
 ]
