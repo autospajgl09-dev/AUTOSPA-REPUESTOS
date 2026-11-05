@@ -82,5 +82,11 @@
     "vehiculo": "MAZDA CX5 2016",
     "precio": "$145990",
     "foto": "imagenes/foco-trasero-derecho-1793893914613.jpg"
+  },
+  {
+    "nombre": "FOCO TRASERO DERECHO",
+    "vehiculo": "MAZDA CX2 2016-2019",
+    "precio": "$145000",
+    "foto": "imagenes/foco-trasero-derecho-1793894044902.jpg"
   }
 ]
