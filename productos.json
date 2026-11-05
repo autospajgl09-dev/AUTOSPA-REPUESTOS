@@ -54,5 +54,12 @@
     "categoria": "Limpieza",
     "precio": "$8000",
     "foto": "imagenes/liquido-de-frenos-dot-4-lf4-1793910446371.jpg"
+  },
+  {
+    "nombre": "SUPER AFLOJATODO MULTIPROPOSITO",
+    "vehiculo": "PRESTONE",
+    "categoria": "Limpieza",
+    "precio": "$9000",
+    "foto": "imagenes/super-aflojatodo-multiproposito-1793910571524.jpg"
   }
 ]
