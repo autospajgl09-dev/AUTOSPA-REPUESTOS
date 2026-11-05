@@ -26,6 +26,13 @@ nav a:hover{background:var(--g);color:#101510}
 .empty{background:var(--panel);border:1px dashed #58713c;border-radius:12px;padding:18px;text-align:center;color:var(--muted)}
 .contact{background:#182018;border-top:1px solid #34432c;text-align:center;padding:28px 18px}.contact p{color:var(--muted);line-height:1.6}
 footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
+
+    .search-wrap{max-width:760px;margin:0 auto 28px;padding:0 18px}
+    .search-label{display:block;color:var(--g);font-weight:bold;margin-bottom:9px}
+    .search-input{width:100%;padding:15px 17px;border:2px solid #405038;border-radius:12px;background:#1a211a;color:#f7faf5;font-size:1rem;outline:none}
+    .search-input:focus{border-color:var(--g);box-shadow:0 0 0 3px #8bcf2830}
+    .search-status{color:var(--muted);font-size:.9rem;margin:9px 2px 0;min-height:1.2em}
+
 </style></head>
 <body>
 <header><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></header>
@@ -33,6 +40,15 @@ footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
 <a href="#focos">Focos</a><a href="#accesorios">Accesorios</a><a href="#limpieza">Limpieza</a><a href="#iluminacion">Iluminación</a><a href="#contacto">Contacto</a>
 </nav>
 <section class="hero"><h1>Encuentra tu repuesto</h1><p>Explora nuestro catálogo por categoría. Consulta disponibilidad y precios directamente por WhatsApp.</p></section>
+
+<section class="search-wrap" aria-label="Buscar productos">
+  <label class="search-label" for="buscador">BUSCA TU REPUESTO POR NOMBRE O VEHÍCULO</label>
+  <input id="buscador" class="search-input" type="search"
+    placeholder="Ej.: Samsung SM3, Toyota RAV4, óptico delantero..."
+    autocomplete="off">
+  <p id="search-status" class="search-status" aria-live="polite">Escribe una marca, modelo o repuesto para filtrar el catálogo.</p>
+</section>
+
 <main class="section" id="catalogo">
 <section class="category" id="focos"><h2>Focos</h2><p class="hint">Ópticos, focos delanteros y traseros.</p><div id="grid-focos" class="grid"></div><div id="empty-focos" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
 <section class="category" id="accesorios"><h2>Accesorios</h2><p class="hint">Accesorios para tu vehículo.</p><div id="grid-accesorios" class="grid"></div><div id="empty-accesorios" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
@@ -65,15 +81,54 @@ function makeCard(p){
  const a=document.createElement("a");a.className="button";a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));a.target="_blank";a.rel="noopener";a.textContent="Consultar";
  info.append(h,v,price,a);card.append(img,info);return card;
 }
+const buscador=document.getElementById("buscador");
+const estadoBusqueda=document.getElementById("search-status");
+let tarjetasPorCategoria={};
+
+function filtrarProductos(){
+ const term=(buscador.value||"").trim().toLocaleLowerCase("es");
+ let total=0;
+ categories.forEach(c=>{
+  const section=document.getElementById(c.id);
+  const cards=tarjetasPorCategoria[c.id]||[];
+  let visibles=0;
+  cards.forEach(card=>{
+   const match=!term||card.dataset.search.includes(term);
+   card.hidden=!match;
+   if(match)visibles++;
+  });
+  const empty=document.getElementById("empty-"+c.id);
+  if(term){
+   section.hidden=visibles===0;
+   empty.hidden=true;
+  }else{
+   section.hidden=false;
+   empty.hidden=cards.length>0;
+  }
+  total+=visibles;
+ });
+ if(term){
+  estadoBusqueda.textContent=total
+   ? total+" producto(s) encontrado(s) para: "+buscador.value
+   : "No encontramos productos con ese nombre o vehículo. Prueba con otra búsqueda.";
+ }else{
+  estadoBusqueda.textContent="Escribe una marca, modelo o repuesto para filtrar el catálogo.";
+ }
+}
+
+buscador.addEventListener("input",filtrarProductos);
+
 fetch("./productos.json?actualizacion="+Date.now()).then(r=>{if(!r.ok)throw new Error("No se pudo leer el catálogo");return r.json()})
 .then(items=>{
  if(!Array.isArray(items))throw new Error("Formato de catálogo incorrecto");
  categories.forEach(c=>{
   const products=items.filter(p=>getCategory(p)===c.name);
   const grid=document.getElementById("grid-"+c.id);
-  products.forEach(p=>grid.append(makeCard(p)));
+  tarjetasPorCategoria[c.id]=products.map(p=>makeCard(p));
+  tarjetasPorCategoria[c.id].forEach(card=>grid.append(card));
   document.getElementById("empty-"+c.id).hidden=products.length>0;
  });
+ filtrarProductos();
 })
 .catch(()=>{
  categories.forEach(c=>{
