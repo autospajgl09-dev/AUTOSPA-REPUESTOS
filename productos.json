@@ -160,5 +160,11 @@
     "vehiculo": "SAMSUNG SM3 2015",
     "precio": "$53990",
     "foto": "imagenes/mascara-1793902300858.jpg"
+  },
+  {
+    "nombre": "ANTICONGELANTE + REFRIGERANTE 35%",
+    "vehiculo": "PRESTONE",
+    "precio": "$13900",
+    "foto": "imagenes/anticongelante-refrigerante-35-1793902525020.jpg"
   }
 ]
