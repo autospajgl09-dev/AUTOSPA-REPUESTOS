@@ -33,5 +33,12 @@
     "categoria": "Limpieza",
     "precio": "$23000",
     "foto": "imagenes/anticongelante-refrigerante-max-rojo-asian-1793909489931.jpg"
+  },
+  {
+    "nombre": "ANTICONGELANTE + REFRIGERANTE DEXCOOL",
+    "vehiculo": "PRESTONE 50/50",
+    "categoria": "Limpieza",
+    "precio": "$19800",
+    "foto": "imagenes/anticongelante-refrigerante-dexcool-1793909671949.jpg"
   }
 ]
