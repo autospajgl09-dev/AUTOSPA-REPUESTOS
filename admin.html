@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Administrar AUTOSPA</title>
+<style>
+:root{--g:#8bcf28;--bg:#0d110d;--panel:#1a211a;--muted:#bac5b6}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#f7faf5;font-family:Arial,sans-serif}header{padding:22px 16px;text-align:center;background:#182018;border-bottom:3px solid var(--g)}
+h1{color:var(--g);margin:0}main{max-width:850px;margin:auto;padding:20px 15px 45px}.card{background:var(--panel);border:1px solid #35432f;border-radius:14px;padding:18px;margin:16px 0}
+label{display:block;font-weight:bold;margin:12px 0 6px}input{width:100%;padding:12px;border-radius:8px;border:1px solid #596451;background:#0e130e;color:white}
+button,.link{border:0;border-radius:8px;padding:12px 16px;background:var(--g);color:#101510;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin:8px 5px 0 0}
+.secondary{background:#364331;color:white}.danger{background:#b94141;color:white}.small{font-size:.9rem;color:var(--muted);line-height:1.5}
+.item{border-top:1px solid #3b4935;padding:12px 0;display:flex;gap:12px;align-items:center}.item img{width:76px;height:76px;object-fit:cover;background:white;border-radius:8px}.item div{flex:1}
+#status{white-space:pre-wrap;color:var(--g);margin-top:12px}.warning{color:#ffd27a}.hide{display:none}
+</style></head><body>
+<header><h1>AUTOSPA</h1><p>Panel de administración de productos</p></header>
+<main>
+<div class="card"><h2>1. Conectar con GitHub</h2>
+<p class="small">Crea un token de acceso personal de GitHub con permiso <b>Contents: Read and write</b> únicamente para el repositorio AUTOSPA--REPUESTOS. No compartas ese token con nadie. Se usa solo mientras esta página está abierta y no se guarda.</p>
+<label for="token">Token de GitHub</label><input id="token" type="password" autocomplete="off" placeholder="Pega aquí tu token privado">
+<button id="connect">Conectar y cargar catálogo</button><div id="status"></div>
+</div>
+<div class="card hide" id="formCard"><h2>2. Agregar un repuesto</h2>
+<label for="name">Nombre del repuesto *</label><input id="name" placeholder="Ej. Óptico delantero izquierdo">
+<label for="vehicle">Marca, modelo y año *</label><input id="vehicle" placeholder="Ej. Hyundai Accent 2018">
+<label for="price">Precio en pesos chilenos *</label><input id="price" placeholder="Ej. 95000">
+<label for="photo">Foto del repuesto *</label><input id="photo" type="file" accept="image/*">
+<p class="small">Usa fotos JPG, PNG o WEBP. Recomendado: menos de 2 MB por foto.</p>
+<button id="add">Subir foto y agregar producto</button>
+</div>
+<div class="card hide" id="listCard"><h2>3. Productos publicados</h2><div id="list"></div></div>
+<div class="card"><a class="link secondary" href="./">Ver página pública</a><p class="small">Después de guardar, GitHub puede tardar uno o dos minutos en mostrar los cambios.</p></div>
+</main>
+<script>
+const OWNER="autospajgl09-dev", REPO="AUTOSPA--REPUESTOS", BRANCH="main";
+let token="", products=[], busy=false;
+const $=id=>document.getElementById(id);
+function status(msg,isError=false){$("status").textContent=msg;$("status").style.color=isError?"#ff8c8c":"#8bcf28"}
+async function api(path,options={}){const r=await fetch("https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+path,{...options,headers:{"Accept":"application/vnd.github+json","Authorization":"Bearer "+token,"X-GitHub-Api-Version":"2022-11-28",...(options.headers||{})}});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.message||("Error GitHub "+r.status));return data}
+async function readProducts(){try{const d=await api("productos.json");return JSON.parse(decodeURIComponent(escape(atob(d.content.replace(/\n/g,"")))))}catch(e){if(String(e.message).includes("Not Found"))return [];throw e}}
+function b64(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result.split(",")[1]);reader.onerror=reject;reader.readAsDataURL(file)})}
+async function saveProducts(){let sha;try{sha=(await api("productos.json")).sha}catch(e){}
+const content=btoa(unescape(encodeURIComponent(JSON.stringify(products,null,2))));
+await api("productos.json",{method:"PUT",body:JSON.stringify({message:"Actualizar catálogo AUTOSPA",content,branch:BRANCH,...(sha?{sha}:{})})})}
+function render(){const list=$("list");list.innerHTML="";if(!products.length){list.textContent="Todavía no hay productos.";return}
+products.forEach((p,i)=>{const row=document.createElement("div");row.className="item";const img=document.createElement("img");img.src=p.foto;const d=document.createElement("div");const b=document.createElement("b");b.textContent=p.nombre;const sub=document.createElement("p");sub.className="small";sub.textContent=p.vehiculo+" · "+p.precio;const del=document.createElement("button");del.className="danger";del.textContent="Quitar del catálogo";del.onclick=async()=>{if(!confirm("¿Quitar "+p.nombre+" del catálogo?"))return;products.splice(i,1);try{await saveProducts();render();status("Producto quitado del catálogo. La foto antigua puede seguir guardada en GitHub.")}catch(e){status(e.message,true)}};d.append(b,sub,del);row.append(img,d);list.append(row)})}
+$("connect").onclick=async()=>{token=$("token").value.trim();if(!token){status("Pega tu token privado para conectar.",true);return}
+try{status("Conectando con GitHub…");products=await readProducts();$("formCard").classList.remove("hide");$("listCard").classList.remove("hide");render();status("Conexión correcta. Catálogo cargado.")}catch(e){status("No se pudo conectar: "+e.message+". Revisa el token y sus permisos.",true);token=""}};
+$("add").onclick=async()=>{if(busy)return;const name=$("name").value.trim(),vehicle=$("vehicle").value.trim(),rawPrice=$("price").value.trim(),file=$("photo").files[0];
+if(!name||!vehicle||!rawPrice||!file){status("Completa nombre, vehículo, precio y selecciona una foto.",true);return}
+if(file.size>2*1024*1024){status("La foto supera 2 MB. Reduce su tamaño e inténtalo nuevamente.",true);return}
+if(!/^image\/(jpeg|png|webp)$/.test(file.type)){status("Usa una foto JPG, PNG o WEBP.",true);return}
+busy=true;$("add").disabled=true;
+try{status("Subiendo foto…");const ext=file.type==="image/png"?"png":file.type==="image/webp"?"webp":"jpg";const safe=name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"repuesto";const filename=safe+"-"+Date.now()+"."+ext;const encoded=await b64(file);
+await api("imagenes/"+filename,{method:"PUT",body:JSON.stringify({message:"Agregar foto de producto AUTOSPA",content:encoded,branch:BRANCH})});
+const price=rawPrice.startsWith("$")?rawPrice:"$"+rawPrice.replace(/\$/g,"");
+products.push({nombre:name,vehiculo,precio:price,foto:"imagenes/"+filename});
+await saveProducts();render();$("name").value="";$("vehicle").value="";$("price").value="";$("photo").value="";status("¡Producto agregado! Espera uno o dos minutos y revisa la página pública.")}catch(e){status("No se pudo guardar: "+e.message,true)}finally{busy=false;$("add").disabled=false}};
+</script></body></html>
