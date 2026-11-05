@@ -52,5 +52,11 @@
     "vehiculo": "MAZDA CX5 2013-2015",
     "precio": "$650000",
     "foto": "imagenes/optico-delantero-izquierdo-1793892313627.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "VOLKSWAGEN GOL 2018",
+    "precio": "$90000",
+    "foto": "imagenes/optico-delantero-izquierdo-1793892405042.jpg"
   }
 ]
