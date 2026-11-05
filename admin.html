@@ -52,6 +52,6 @@ busy=true;$("add").disabled=true;
 try{status("Subiendo foto…");const ext=file.type==="image/png"?"png":file.type==="image/webp"?"webp":"jpg";const safe=name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"repuesto";const filename=safe+"-"+Date.now()+"."+ext;const encoded=await b64(file);
 await api("imagenes/"+filename,{method:"PUT",body:JSON.stringify({message:"Agregar foto de producto AUTOSPA",content:encoded,branch:BRANCH})});
 const price=rawPrice.startsWith("$")?rawPrice:"$"+rawPrice.replace(/\$/g,"");
-products.push({nombre:name,vehiculo,precio:price,foto:"imagenes/"+filename});
+products.push({nombre:name,vehiculo:vehicle,precio:price,foto:"imagenes/"+filename});
 await saveProducts();render();$("name").value="";$("vehicle").value="";$("price").value="";$("photo").value="";status("¡Producto agregado! Espera uno o dos minutos y revisa la página pública.")}catch(e){status("No se pudo guardar: "+e.message,true)}finally{busy=false;$("add").disabled=false}};
 </script></body></html>
