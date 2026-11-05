@@ -112,5 +112,11 @@
     "vehiculo": "NISSAN MARCH 2010-2015",
     "precio": "$50990",
     "foto": "imagenes/foco-luz-tercera-freno-1793899862387.jpg"
+  },
+  {
+    "nombre": "FOCO UNIVERSAL LED",
+    "vehiculo": "UNIVERSAL 36 LUCES",
+    "precio": "$35990",
+    "foto": "imagenes/foco-universal-led-1793899958393.jpg"
   }
 ]
