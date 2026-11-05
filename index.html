@@ -10,6 +10,10 @@
 header{background:linear-gradient(135deg,#111811,#202a1b);border-bottom:3px solid var(--g);padding:28px 16px;text-align:center}
 .brand{margin:0;color:var(--g);font-size:clamp(2rem,7vw,3.1rem);font-weight:900;letter-spacing:3px}
 .subtitle{margin:7px 0 0}
+.brand-row{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.brand-logo{width:104px;height:104px;object-fit:contain;border-radius:50%;border:3px solid var(--g);background:#fff}
+.brand-copy{text-align:left}
+@media(max-width:520px){.brand-logo{width:82px;height:82px}.brand-copy{text-align:center}}
 nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:14px;background:#151b15}
 nav a{color:white;text-decoration:none;font-weight:bold;padding:9px 13px;border:1px solid #405038;border-radius:20px}
 nav a:hover{background:var(--g);color:#101510}
@@ -35,7 +39,7 @@ footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
 
 </style></head>
 <body>
-<header><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></header>
+<header><div class="brand-row"><img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA"><div class="brand-copy"><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></div></div></header>
 <nav>
 <a href="#focos">Focos</a><a href="#accesorios">Accesorios</a><a href="#limpieza">Limpieza</a><a href="#iluminacion">Iluminación</a><a href="#contacto">Contacto</a>
 </nav>
@@ -73,6 +77,7 @@ function getCategory(p){
 }
 function makeCard(p){
  const card=document.createElement("article");card.className="product";
+ card.dataset.search=normalizar([p.nombre||"",p.vehiculo||"",p.categoria||""].join(" "));
  const img=document.createElement("img");img.src=p.foto||"";img.alt=p.nombre||"Repuesto AUTOSPA";img.loading="lazy";
  const info=document.createElement("div");info.className="info";
  const h=document.createElement("h3");h.textContent=p.nombre||"Repuesto";
@@ -85,8 +90,10 @@ const buscador=document.getElementById("buscador");
 const estadoBusqueda=document.getElementById("search-status");
 let tarjetasPorCategoria={};
 
+function normalizar(texto){return String(texto||"").toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
+
 function filtrarProductos(){
- const term=(buscador.value||"").trim().toLocaleLowerCase("es");
+ const term=normalizar(buscador.value);
  let total=0;
  categories.forEach(c=>{
   const section=document.getElementById(c.id);
