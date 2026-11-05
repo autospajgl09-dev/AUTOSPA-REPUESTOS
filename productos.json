@@ -148,5 +148,11 @@
     "vehiculo": "RETANGULAR 5LED 9-48V 2000LM 5\"",
     "precio": "$23900",
     "foto": "imagenes/farol-faena-retangular-1793900627691.jpg"
+  },
+  {
+    "nombre": "FAROL FAENA CUADRADO",
+    "vehiculo": "CUADRADO 9LED 9-48V 1800LM",
+    "precio": "$14800",
+    "foto": "imagenes/farol-faena-cuadrado-1793900755160.jpg"
   }
 ]
