@@ -46,5 +46,11 @@
     "vehiculo": "MAZDA 6 2015-2017",
     "precio": "$190000",
     "foto": "imagenes/optico-delantero-izquierdo-1793892211815.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "MAZDA CX5 2013-2015",
+    "precio": "$650000",
+    "foto": "imagenes/optico-delantero-izquierdo-1793892313627.jpg"
   }
 ]
