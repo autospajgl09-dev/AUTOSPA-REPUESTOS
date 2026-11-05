@@ -96,5 +96,12 @@
     "categoria": "Limpieza",
     "precio": "$4000",
     "foto": "imagenes/ambientador-1793911507375.jpg"
+  },
+  {
+    "nombre": "AMBIENTADORES 500ML",
+    "vehiculo": "AUTOSPA",
+    "categoria": "Limpieza",
+    "precio": "$4800",
+    "foto": "imagenes/ambientadores-500ml-1793911616628.jpg"
   }
 ]
