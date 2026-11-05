@@ -22,5 +22,11 @@
     "vehiculo": "TOYOTA RAV4 2016-2018",
     "precio": "$290000",
     "foto": "imagenes/optico-delantero-derecho-1793891372819.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "CITROEN C-ELYSSE 2015-2016",
+    "precio": "$400000",
+    "foto": "imagenes/optico-delantero-izquierdo-1793891550419.jpg"
   }
 ]
