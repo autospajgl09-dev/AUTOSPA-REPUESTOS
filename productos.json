@@ -117,5 +117,12 @@
     "categoria": "Limpieza",
     "precio": "$3500",
     "foto": "imagenes/renovador-de-goma-1793911755759.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA H11",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$8900",
+    "foto": "imagenes/ampolleta-h11-1793911904145.jpg"
   }
 ]
