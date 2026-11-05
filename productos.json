@@ -154,5 +154,11 @@
     "vehiculo": "CUADRADO 9LED 9-48V 1800LM",
     "precio": "$14800",
     "foto": "imagenes/farol-faena-cuadrado-1793900755160.jpg"
+  },
+  {
+    "nombre": "MASCARA",
+    "vehiculo": "SAMSUNG SM3 2015",
+    "precio": "$53990",
+    "foto": "imagenes/mascara-1793902300858.jpg"
   }
 ]
