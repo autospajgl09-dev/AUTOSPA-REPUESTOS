@@ -100,5 +100,11 @@
     "vehiculo": "SUZUKI SWIFT 2016",
     "precio": "$72000",
     "foto": "imagenes/foco-trasero-izquierdo-1793894309822.jpg"
+  },
+  {
+    "nombre": "FOCO TRASERO DERECHO",
+    "vehiculo": "JEEP COMPASS 2007-2009",
+    "precio": "$115250",
+    "foto": "imagenes/foco-trasero-derecho-1793894462699.jpg"
   }
 ]
