@@ -142,5 +142,11 @@
     "vehiculo": "LUZ AMBAR 10-80V 102DB",
     "precio": "$25800",
     "foto": "imagenes/alarma-retroceso-1793900495979.jpg"
+  },
+  {
+    "nombre": "FAROL FAENA RETANGULAR",
+    "vehiculo": "RETANGULAR 5LED 9-48V 2000LM 5\"",
+    "precio": "$23900",
+    "foto": "imagenes/farol-faena-retangular-1793900627691.jpg"
   }
 ]
