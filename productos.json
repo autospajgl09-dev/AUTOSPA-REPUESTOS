@@ -130,5 +130,11 @@
     "vehiculo": "TOYOTA RAV4 2016-2018",
     "precio": "$21990",
     "foto": "imagenes/tapa-neblinero-1793900284915.jpg"
+  },
+  {
+    "nombre": "TAPA NEBLINERO",
+    "vehiculo": "TOYOTA YARIS 2018-2020",
+    "precio": "$59925",
+    "foto": "imagenes/tapa-neblinero-1793900381679.jpg"
   }
 ]
