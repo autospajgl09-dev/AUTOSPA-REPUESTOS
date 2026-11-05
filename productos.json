@@ -75,5 +75,12 @@
     "categoria": "Limpieza",
     "precio": "$15000",
     "foto": "imagenes/limpiador-de-interior-1793910790163.jpg"
+  },
+  {
+    "nombre": "LIMPIADOR DE NEUMATICO",
+    "vehiculo": "MEGUIAR´S",
+    "categoria": "Limpieza",
+    "precio": "$13000",
+    "foto": "imagenes/limpiador-de-neumatico-1793910871370.jpg"
   }
 ]
