@@ -70,5 +70,11 @@
     "vehiculo": "SAMSUNG SM3 2015",
     "precio": "$90000",
     "foto": "imagenes/neblinero-samsung-derecho-e-izquierdo-1793892727542.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "HYUNDAI TERRACAN 2006-2007",
+    "precio": "$110900",
+    "foto": "imagenes/optico-delantero-izquierdo-1793893261091.jpg"
   }
 ]
