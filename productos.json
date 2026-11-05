@@ -5,5 +5,12 @@
     "categoria": "Focos",
     "precio": "$95000",
     "foto": "imagenes/optico-delantero-izquierdo-1793890304261.jpg"
+  },
+  {
+    "nombre": "ANTICONGELANTE + REFRIGERANTE MAX EUROPEAN ROSADO",
+    "vehiculo": "PRESTONE 50/50",
+    "categoria": "Limpieza",
+    "precio": "$23500",
+    "foto": "imagenes/anticongelante-refrigerante-max-european-rosado-1793903568596.jpg"
   }
 ]
