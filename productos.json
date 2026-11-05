@@ -82,5 +82,12 @@
     "categoria": "Limpieza",
     "precio": "$13000",
     "foto": "imagenes/limpiador-de-neumatico-1793910871370.jpg"
+  },
+  {
+    "nombre": "SHAMPOO PARA AUTO",
+    "vehiculo": "MEGUIAR´S",
+    "categoria": "Limpieza",
+    "precio": "$14000",
+    "foto": "imagenes/shampoo-para-auto-1793910957223.jpg"
   }
 ]
