@@ -88,5 +88,11 @@
     "vehiculo": "MAZDA CX2 2016-2019",
     "precio": "$145000",
     "foto": "imagenes/foco-trasero-derecho-1793894044902.jpg"
+  },
+  {
+    "nombre": "FOCO TRASERO IZQUIERDO",
+    "vehiculo": "HYUNDAI GRAND I10 2015-2017",
+    "precio": "$75990",
+    "foto": "imagenes/foco-trasero-izquierdo-1793894207833.jpg"
   }
 ]
