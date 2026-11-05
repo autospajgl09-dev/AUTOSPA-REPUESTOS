@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de repuestos AUTOSPA en Antofagasta. Consulta disponibilidad por WhatsApp.">
+  <title>AUTOSPA | Repuestos</title>
+  <style>
+    :root{--green:#8bcf28;--dark:#101410;--panel:#1a211a;--muted:#b9c2b6;--white:#f7faf5}
+    *{box-sizing:border-box}
+    body{margin:0;background:#0d110d;color:var(--white);font-family:Arial,Helvetica,sans-serif}
+    header{background:linear-gradient(135deg,#111811,#202a1b);border-bottom:3px solid var(--green);padding:30px 18px;text-align:center}
+    .brand{font-size:clamp(2rem,7vw,3.2rem);font-weight:900;letter-spacing:3px;margin:0;color:var(--green)}
+    .subtitle{margin:8px 0 0;color:#fff;font-size:1rem}
+    nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:14px;background:#151b15}
+    nav a{color:#fff;text-decoration:none;font-weight:bold}
+    nav a:hover{color:var(--green)}
+    .hero{max-width:1000px;margin:auto;padding:38px 18px 24px;text-align:center}
+    .hero h1{font-size:clamp(1.6rem,5vw,2.4rem);margin:0 0 12px}
+    .hero p{color:var(--muted);line-height:1.6;margin:0 auto;max-width:700px}
+    .section{max-width:1100px;margin:0 auto;padding:20px 18px 48px}
+    .section h2{font-size:1.7rem;margin:0 0 8px}
+    .hint{color:var(--muted);margin:0 0 22px;line-height:1.5}
+    .empty{background:var(--panel);border:1px dashed #58713c;border-radius:16px;padding:34px 20px;text-align:center}
+    .empty .symbol{font-size:2.5rem}
+    .empty h3{margin:10px 0;color:var(--green)}
+    .empty p{color:var(--muted);line-height:1.6;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .product{background:var(--panel);border:1px solid #303b2d;border-radius:14px;overflow:hidden}
+    .product img{width:100%;height:190px;object-fit:contain;background:#fff}
+    .product-info{padding:15px}
+    .product h3{margin:0 0 8px;font-size:1.08rem}
+    .product p{margin:5px 0;color:var(--muted);font-size:.94rem}
+    .price{font-size:1.25rem;font-weight:bold;color:var(--green);margin:12px 0!important}
+    .contact{background:#182018;border-top:1px solid #34432c;padding:28px 18px;text-align:center}
+    .contact p{color:var(--muted);line-height:1.6}
+    .button{display:inline-block;background:var(--green);color:#101510;text-decoration:none;font-weight:bold;padding:13px 22px;border-radius:9px;margin:8px 4px}
+    footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
+    @media(max-width:500px){nav{gap:14px}.section{padding-bottom:34px}}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="brand">AUTOSPA</p>
+    <p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p>
+  </header>
+  <nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>
+  <main>
+    <section class="hero">
+      <h1>Encuentra tu repuesto</h1>
+      <p>Consulta por repuestos y accesorios para tu vehículo. Estamos para ayudarte a encontrar lo que necesitas.</p>
+    </section>
+    <section class="section" id="catalogo">
+      <h2>Catálogo de productos</h2>
+      <p class="hint">Estamos preparando nuestro catálogo. Pronto encontrarás aquí fotos, modelos y precios de nuestros repuestos.</p>
+      <div id="productos" class="grid"></div>
+      <div id="vacio" class="empty">
+        <div class="symbol">🚘</div>
+        <h3>Próximamente nuevos productos</h3>
+        <p>Estamos actualizando el catálogo de AUTOSPA.<br>Si buscas un repuesto, consúltanos directamente por WhatsApp.</p>
+      </div>
+    </section>
+    <section class="contact" id="contacto">
+      <h2>¿Buscas un repuesto?</h2>
+      <p>Escríbenos y consulta disponibilidad y precios.</p>
+      <a class="button" href="https://wa.me/56988149426?text=Hola%20AUTOSPA%2C%20quisiera%20consultar%20por%20un%20repuesto" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      <div id="ubicacion">
+        <h3>Visítanos</h3>
+        <p>Víctor Jara 645, entre Rendic y Osorno<br>Antofagasta, Chile</p>
+        <a class="button" href="https://www.google.com/maps/search/?api=1&query=Victor+Jara+645+Antofagasta+Chile" target="_blank" rel="noopener">Ver ubicación</a>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices</footer>
+  <script>
+    // Para agregar productos en el futuro, incorpora elementos dentro de esta lista.
+    // Ejemplo:
+    // { nombre: "Óptico delantero", vehiculo: "Marca Modelo Año", precio: "$50.000", foto: "imagenes/optico.jpg" }
+    const productos = [];
+
+    const contenedor = document.getElementById("productos");
+    const vacio = document.getElementById("vacio");
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    if (productos.length) {
+      vacio.style.display = "none";
+      productos.forEach((p) => {
+        const tarjeta = document.createElement("article");
+        tarjeta.className = "product";
+        const foto = p.foto ? `<img src="${p.foto}" alt="${p.nombre}">` : "";
+        tarjeta.innerHTML = `${foto}<div class="product-info">
+          <h3>${p.nombre}</h3>
+          <p>${p.vehiculo || ""}</p>
+          <p class="price">${p.precio || "Consultar precio"}</p>
+          <a class="button" href="https://wa.me/56988149426?text=${encodeURIComponent("Hola AUTOSPA, consulto por: " + p.nombre + " - " + (p.vehiculo || ""))}" target="_blank" rel="noopener">Consultar</a>
+        </div>`;
+        contenedor.appendChild(tarjeta);
+      });
+    }
+  </script>
+</body>
+</html>
