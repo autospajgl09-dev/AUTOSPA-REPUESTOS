@@ -136,5 +136,11 @@
     "vehiculo": "TOYOTA YARIS 2018-2020",
     "precio": "$59925",
     "foto": "imagenes/tapa-neblinero-1793900381679.jpg"
+  },
+  {
+    "nombre": "ALARMA RETROCESO",
+    "vehiculo": "LUZ AMBAR 10-80V 102DB",
+    "precio": "$25800",
+    "foto": "imagenes/alarma-retroceso-1793900495979.jpg"
   }
 ]
