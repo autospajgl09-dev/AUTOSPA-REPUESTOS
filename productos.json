@@ -61,5 +61,12 @@
     "categoria": "Limpieza",
     "precio": "$9000",
     "foto": "imagenes/super-aflojatodo-multiproposito-1793910571524.jpg"
+  },
+  {
+    "nombre": "LIMPIADOR DE MOTORES",
+    "vehiculo": "MEGUIAR´S",
+    "categoria": "Limpieza",
+    "precio": "$22000",
+    "foto": "imagenes/limpiador-de-motores-1793910669171.jpg"
   }
 ]
