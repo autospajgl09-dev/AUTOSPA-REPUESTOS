@@ -110,5 +110,12 @@
     "categoria": "Limpieza",
     "precio": "$4700",
     "foto": "imagenes/silicona-liviana-1793911690523.jpg"
+  },
+  {
+    "nombre": "RENOVADOR DE GOMA",
+    "vehiculo": "AUTOSPA",
+    "categoria": "Limpieza",
+    "precio": "$3500",
+    "foto": "imagenes/renovador-de-goma-1793911755759.jpg"
   }
 ]
