@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Catálogo de repuestos AUTOSPA en Antofagasta.">
+<title>AUTOSPA | Repuestos y accesorios</title>
+<style>
+:root{--g:#8bcf28;--bg:#0d110d;--panel:#1a211a;--muted:#b9c2b6;--white:#f7faf5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+header{background:linear-gradient(135deg,#111811,#202a1b);border-bottom:3px solid var(--g);padding:28px 16px;text-align:center}
+.brand{margin:0;color:var(--g);font-size:clamp(2rem,7vw,3.1rem);font-weight:900;letter-spacing:3px}
+.subtitle{margin:7px 0 0}
+.brand-row{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.brand-logo{width:104px;height:104px;object-fit:contain;border-radius:50%;border:3px solid var(--g);background:#fff}
+.brand-copy{text-align:left}
+@media(max-width:520px){.brand-logo{width:82px;height:82px}.brand-copy{text-align:center}}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:14px;background:#151b15}
+nav a{color:white;text-decoration:none;font-weight:bold;padding:9px 13px;border:1px solid #405038;border-radius:20px}
+nav a:hover{background:var(--g);color:#101510}
+.hero,.section{max-width:1100px;margin:auto;padding:28px 18px}
+.hero{text-align:center}.hero p,.hint{color:var(--muted);line-height:1.6}
+.category{padding-top:18px;margin-bottom:34px;scroll-margin-top:15px}
+.category h2{color:var(--g);border-bottom:1px solid #405038;padding-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.product{background:var(--panel);border:1px solid #303b2d;border-radius:14px;overflow:hidden}
+.product img{width:100%;height:190px;object-fit:contain;background:#fff}
+.info{padding:15px}.info h3{margin:0 0 8px}.info p{color:var(--muted);margin:6px 0}
+.price{font-size:1.25rem;font-weight:bold;color:var(--g)!important}
+.button{display:inline-block;background:var(--g);color:#101510;text-decoration:none;font-weight:bold;padding:12px 18px;border-radius:9px;margin:8px 4px}
+.empty{background:var(--panel);border:1px dashed #58713c;border-radius:12px;padding:18px;text-align:center;color:var(--muted)}
+.contact{background:#182018;border-top:1px solid #34432c;text-align:center;padding:28px 18px}.contact p{color:var(--muted);line-height:1.6}
+footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
+
+    .search-wrap{max-width:760px;margin:0 auto 28px;padding:0 18px}
+    .search-label{display:block;color:var(--g);font-weight:bold;margin-bottom:9px}
+    .search-input{width:100%;padding:15px 17px;border:2px solid #405038;border-radius:12px;background:#1a211a;color:#f7faf5;font-size:1rem;outline:none}
+    .search-input:focus{border-color:var(--g);box-shadow:0 0 0 3px #8bcf2830}
+    .search-status{color:var(--muted);font-size:.9rem;margin:9px 2px 0;min-height:1.2em}
+
+</style></head>
+<body>
+<header><div class="brand-row"><img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA"><div class="brand-copy"><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></div></div></header>
+<nav>
+<a href="#focos">Focos</a><a href="#accesorios">Accesorios</a><a href="#limpieza">Limpieza</a><a href="#iluminacion">Iluminación</a><a href="#contacto">Contacto</a>
+</nav>
+<section class="hero"><h1>Encuentra tu repuesto</h1><p>Explora nuestro catálogo por categoría. Consulta disponibilidad y precios directamente por WhatsApp.</p></section>
+
+<section class="search-wrap" aria-label="Buscar productos">
+  <label class="search-label" for="buscador">BUSCA TU REPUESTO POR NOMBRE O VEHÍCULO</label>
+  <input id="buscador" class="search-input" type="search"
+    placeholder="Ej.: Samsung SM3, Toyota RAV4, óptico delantero..."
+    autocomplete="off">
+  <p id="search-status" class="search-status" aria-live="polite">Escribe una marca, modelo o repuesto para filtrar el catálogo.</p>
+</section>
+
+<main class="section" id="catalogo">
+<section class="category" id="focos"><h2>Focos</h2><p class="hint">Ópticos, focos delanteros y traseros.</p><div id="grid-focos" class="grid"></div><div id="empty-focos" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
+<section class="category" id="accesorios"><h2>Accesorios</h2><p class="hint">Accesorios para tu vehículo.</p><div id="grid-accesorios" class="grid"></div><div id="empty-accesorios" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
+<section class="category" id="limpieza"><h2>Limpieza</h2><p class="hint">Productos para el cuidado y limpieza automotriz.</p><div id="grid-limpieza" class="grid"></div><div id="empty-limpieza" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
+<section class="category" id="iluminacion"><h2>Iluminación</h2><p class="hint">Ampolletas, luces LED y soluciones de iluminación.</p><div id="grid-iluminacion" class="grid"></div><div id="empty-iluminacion" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
+</main>
+<section class="contact" id="contacto"><h2>¿Buscas un repuesto?</h2><p>Escríbenos y consulta disponibilidad y precios.</p>
+<a class="button" href="https://wa.me/56988149426?text=Hola%20AUTOSPA%2C%20quisiera%20consultar%20por%20un%20repuesto" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+<div id="ubicacion"><h3>Visítanos</h3><p>Víctor Jara 645, entre Rendic y Osorno<br>Antofagasta, Chile</p><a class="button" href="https://www.google.com/maps/search/?api=1&query=Victor+Jara+645+Antofagasta+Chile" target="_blank" rel="noopener">Ver ubicación</a></div>
+</section><footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices</footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const categories=[
+ {name:"Focos",id:"focos"},{name:"Accesorios",id:"accesorios"},
+ {name:"Limpieza",id:"limpieza"},{name:"Iluminación",id:"iluminacion"}
+];
+function getCategory(p){
+ if(categories.some(c=>c.name===p.categoria)) return p.categoria;
+ const t=((p.nombre||"")+" "+(p.vehiculo||"")).toLowerCase();
+ if(t.includes("optico")||t.includes("óptico")||t.includes("foco")) return "Focos";
+ return "Accesorios";
+}
+function makeCard(p){
+ const card=document.createElement("article");card.className="product";
+ card.dataset.search=normalizar([p.nombre||"",p.vehiculo||"",p.categoria||""].join(" "));
+ const img=document.createElement("img");img.src=p.foto||"";img.alt=p.nombre||"Repuesto AUTOSPA";img.loading="lazy";
+ const info=document.createElement("div");info.className="info";
+ const h=document.createElement("h3");h.textContent=p.nombre||"Repuesto";
+ const v=document.createElement("p");v.textContent=p.vehiculo||"";
+ const price=document.createElement("p");price.className="price";price.textContent=p.precio||"Consultar precio";
+ const a=document.createElement("a");a.className="button";a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));a.target="_blank";a.rel="noopener";a.textContent="Consultar";
+ info.append(h,v,price,a);card.append(img,info);return card;
+}
+const buscador=document.getElementById("buscador");
+const estadoBusqueda=document.getElementById("search-status");
+let tarjetasPorCategoria={};
+
+function normalizar(texto){return String(texto||"").toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
+
+function filtrarProductos(){
+ const term=normalizar(buscador.value);
+ let total=0;
+ categories.forEach(c=>{
+  const section=document.getElementById(c.id);
+  const cards=tarjetasPorCategoria[c.id]||[];
+  let visibles=0;
+  cards.forEach(card=>{
+   const match=!term||card.dataset.search.includes(term);
+   card.hidden=!match;
+   if(match)visibles++;
+  });
+  const empty=document.getElementById("empty-"+c.id);
+  if(term){
+   section.hidden=visibles===0;
+   empty.hidden=true;
+  }else{
+   section.hidden=false;
+   empty.hidden=cards.length>0;
+  }
+  total+=visibles;
+ });
+ if(term){
+  estadoBusqueda.textContent=total
+   ? total+" producto(s) encontrado(s) para: "+buscador.value
+   : "No encontramos productos con ese nombre o vehículo. Prueba con otra búsqueda.";
+ }else{
+  estadoBusqueda.textContent="Escribe una marca, modelo o repuesto para filtrar el catálogo.";
+ }
+}
+
+buscador.addEventListener("input",filtrarProductos);
+
+fetch("./productos.json?actualizacion="+Date.now()).then(r=>{if(!r.ok)throw new Error("No se pudo leer el catálogo");return r.json()})
+.then(items=>{
+ if(!Array.isArray(items))throw new Error("Formato de catálogo incorrecto");
+ categories.forEach(c=>{
+  const products=items.filter(p=>getCategory(p)===c.name);
+  const grid=document.getElementById("grid-"+c.id);
+  tarjetasPorCategoria[c.id]=products.map(p=>makeCard(p));
+  tarjetasPorCategoria[c.id].forEach(card=>grid.append(card));
+  document.getElementById("empty-"+c.id).hidden=products.length>0;
+ });
+ filtrarProductos();
+})
+.catch(()=>{
+ categories.forEach(c=>{
+  const e=document.getElementById("empty-"+c.id);e.hidden=false;e.textContent="No pudimos cargar los productos en este momento. Consulta por WhatsApp.";
+ });
+});
+</script></body></html>
