@@ -10,5 +10,11 @@
     "vehiculo": "SAMSUNG SM3 2015",
     "precio": "$95000",
     "foto": "imagenes/optico-delantero-derecho-1793891049348.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "FORD ECOSPORT 2013-2018",
+    "precio": "$150000",
+    "foto": "imagenes/optico-delantero-izquierdo-1793891188585.jpg"
   }
 ]
