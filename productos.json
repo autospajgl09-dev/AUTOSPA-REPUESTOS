@@ -40,5 +40,11 @@
     "vehiculo": "FORD FUSION 2013-2016",
     "precio": "$200000",
     "foto": "imagenes/optico-delantero-derecho-1793892105749.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO IZQUIERDO",
+    "vehiculo": "MAZDA 6 2015-2017",
+    "precio": "$190000",
+    "foto": "imagenes/optico-delantero-izquierdo-1793892211815.jpg"
   }
 ]
