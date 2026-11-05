@@ -16,5 +16,11 @@
     "vehiculo": "FORD ECOSPORT 2013-2018",
     "precio": "$150000",
     "foto": "imagenes/optico-delantero-izquierdo-1793891188585.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO DERECHO",
+    "vehiculo": "TOYOTA RAV4 2016-2018",
+    "precio": "$290000",
+    "foto": "imagenes/optico-delantero-derecho-1793891372819.jpg"
   }
 ]
