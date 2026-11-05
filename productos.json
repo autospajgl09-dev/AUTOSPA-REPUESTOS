@@ -4,5 +4,11 @@
     "vehiculo": "SAMSUNG SM3 2015",
     "precio": "$95000",
     "foto": "imagenes/optico-delantero-izquierdo-1793890304261.jpg"
+  },
+  {
+    "nombre": "OPTICO DELANTERO DERECHO",
+    "vehiculo": "SAMSUNG SM3 2015",
+    "precio": "$95000",
+    "foto": "imagenes/optico-delantero-derecho-1793891049348.jpg"
   }
 ]
