@@ -64,5 +64,11 @@
     "vehiculo": "HYUNDAI CRETA 2016-2018",
     "precio": "$99990",
     "foto": "imagenes/neblinero-derecho-e-izquierdo-1793892577583.jpg"
+  },
+  {
+    "nombre": "NEBLINERO SAMSUNG DERECHO E IZQUIERDO",
+    "vehiculo": "SAMSUNG SM3 2015",
+    "precio": "$90000",
+    "foto": "imagenes/neblinero-samsung-derecho-e-izquierdo-1793892727542.jpg"
   }
 ]
