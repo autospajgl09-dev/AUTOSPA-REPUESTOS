@@ -19,5 +19,12 @@
     "categoria": "Limpieza",
     "precio": "$23500",
     "foto": "imagenes/anticongelante-refrigerante-max-european-rosado-1793909237102.jpg"
+  },
+  {
+    "nombre": "ANTICONGELANTE + REFRIGERANTE MAX ASIAN VERDE",
+    "vehiculo": "PRESTONE 50/50",
+    "categoria": "Limpieza",
+    "precio": "$21000",
+    "foto": "imagenes/anticongelante-refrigerante-max-asian-verde-1793909369614.jpg"
   }
 ]
