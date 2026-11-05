@@ -68,5 +68,12 @@
     "categoria": "Limpieza",
     "precio": "$22000",
     "foto": "imagenes/limpiador-de-motores-1793910669171.jpg"
+  },
+  {
+    "nombre": "LIMPIADOR DE INTERIOR",
+    "vehiculo": "MEGUIAR´S",
+    "categoria": "Limpieza",
+    "precio": "$15000",
+    "foto": "imagenes/limpiador-de-interior-1793910790163.jpg"
   }
 ]
