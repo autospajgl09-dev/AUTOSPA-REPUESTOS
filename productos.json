@@ -106,5 +106,11 @@
     "vehiculo": "JEEP COMPASS 2007-2009",
     "precio": "$115250",
     "foto": "imagenes/foco-trasero-derecho-1793894462699.jpg"
+  },
+  {
+    "nombre": "FOCO LUZ TERCERA FRENO",
+    "vehiculo": "NISSAN MARCH 2010-2015",
+    "precio": "$50990",
+    "foto": "imagenes/foco-luz-tercera-freno-1793899862387.jpg"
   }
 ]
