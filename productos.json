@@ -94,5 +94,11 @@
     "vehiculo": "HYUNDAI GRAND I10 2015-2017",
     "precio": "$75990",
     "foto": "imagenes/foco-trasero-izquierdo-1793894207833.jpg"
+  },
+  {
+    "nombre": "FOCO TRASERO IZQUIERDO",
+    "vehiculo": "SUZUKI SWIFT 2016",
+    "precio": "$72000",
+    "foto": "imagenes/foco-trasero-izquierdo-1793894309822.jpg"
   }
 ]
