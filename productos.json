@@ -586,5 +586,12 @@
     "categoria": "Accesorios",
     "precio": "$1100",
     "foto": "imagenes/soquete-foco-trasero-v16-1793978386173.webp"
+  },
+  {
+    "nombre": "ENCHUFE DISTRIBUIDOR V16 SENTRA II",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$4000",
+    "foto": "imagenes/enchufe-distribuidor-v16-sentra-ii-1793978465557.webp"
   }
 ]
