@@ -481,5 +481,12 @@
     "categoria": "Accesorios",
     "precio": "$2000",
     "foto": "imagenes/enchufe-hembra-2-pines-para-alternado-v16-1793977305190.webp"
+  },
+  {
+    "nombre": "ENCHUFE PLASTICO 4 PIN PARA RELAY",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2880",
+    "foto": "imagenes/enchufe-plastico-4-pin-para-relay-1793977359063.webp"
   }
 ]
