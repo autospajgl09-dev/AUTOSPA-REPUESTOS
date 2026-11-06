@@ -453,5 +453,12 @@
     "categoria": "Accesorios",
     "precio": "$4500",
     "foto": "imagenes/enchufe-distribuidor-ford-nissan-1793977043683.jpg"
+  },
+  {
+    "nombre": "ENCHUFE PORCELANA AMPOLLETA H13",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$5800",
+    "foto": "imagenes/enchufe-porcelana-ampolleta-h13-1793977102956.jpg"
   }
 ]
