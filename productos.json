@@ -152,5 +152,12 @@
     "categoria": "Iluminación",
     "precio": "$2700",
     "foto": "imagenes/ampolleta-h3-1793972710282.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA H1",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$3200",
+    "foto": "imagenes/ampolleta-h1-1793972796381.jpg"
   }
 ]
