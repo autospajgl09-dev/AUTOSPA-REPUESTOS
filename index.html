@@ -5,45 +5,64 @@
 <meta name="description" content="Catálogo de repuestos AUTOSPA en Antofagasta.">
 <title>AUTOSPA | Repuestos y accesorios</title>
 <style>
-:root{--g:#8bcf28;--bg:#0d110d;--panel:#1a211a;--muted:#b9c2b6;--white:#f7faf5}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-header{background:linear-gradient(135deg,#111811,#202a1b);border-bottom:3px solid var(--g);padding:28px 16px;text-align:center}
-.brand{margin:0;color:var(--g);font-size:clamp(2rem,7vw,3.1rem);font-weight:900;letter-spacing:3px}
-.subtitle{margin:7px 0 0}
-.brand-row{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
-.brand-logo{width:104px;height:104px;object-fit:contain;border-radius:50%;border:3px solid var(--g);background:#fff}
+:root{--green:#39f000;--green2:#8bff38;--bg:#050705;--panel:#111711;--panel2:#1a2419;--muted:#b9c5b5;--white:#f7fff4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+header{background:linear-gradient(110deg,#050705,#172016 65%,#071007);border-bottom:2px solid var(--green);padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand-row{display:flex;align-items:center;gap:14px}
+.brand-logo{width:82px;height:82px;object-fit:contain;background:#fff;border-radius:12px;padding:3px}
 .brand-copy{text-align:left}
-@media(max-width:520px){.brand-logo{width:82px;height:82px}.brand-copy{text-align:center}}
-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:14px;background:#151b15}
-nav a{color:white;text-decoration:none;font-weight:bold;padding:9px 13px;border:1px solid #405038;border-radius:20px}
-nav a:hover{background:var(--g);color:#101510}
-.hero,.section{max-width:1100px;margin:auto;padding:28px 18px}
-.hero{text-align:center}.hero p,.hint{color:var(--muted);line-height:1.6}
-.category{padding-top:18px;margin-bottom:34px;scroll-margin-top:15px}
-.category h2{color:var(--g);border-bottom:1px solid #405038;padding-bottom:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.product{background:var(--panel);border:1px solid #303b2d;border-radius:14px;overflow:hidden}
+.brand{margin:0;color:var(--white);font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:2px}
+.brand::first-letter{color:var(--green)}
+.subtitle{margin:4px 0 0;color:#dce8d8;font-size:.85rem;font-weight:bold;letter-spacing:1px}
+.header-note{color:var(--muted);font-size:.9rem;text-align:right}
+nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:13px 12px;background:#0b100b;border-bottom:1px solid #263323;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;font-weight:bold;padding:10px 16px;border-radius:7px}
+nav a:hover,nav a:focus{background:var(--green);color:#071006}
+.hero{max-width:1200px;min-height:330px;margin:22px auto 0;padding:45px 5%;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 50%,#24451b 0,#111b10 35%,#080b08 72%);border:1px solid #263b20;border-radius:18px;overflow:hidden}
+.hero-copy{max-width:650px}
+.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.03;margin:0 0 15px;font-weight:900}
+.hero h1 span{color:var(--green)}
+.hero p{color:#d0dbcc;line-height:1.6;font-size:1.05rem;max-width:570px}
+.hero-points{display:flex;gap:18px;flex-wrap:wrap;color:var(--green2);font-weight:bold;margin:20px 0}
+.hero-button,.button{display:inline-block;background:var(--green);color:#071006;text-decoration:none;font-weight:900;padding:13px 20px;border-radius:8px;margin:8px 4px 0 0;border:0}
+.hero-button:hover,.button:hover{background:var(--green2);transform:translateY(-1px)}
+.search-wrap{max-width:850px;margin:28px auto 8px;padding:0 18px}
+.search-label{display:block;color:var(--green2);font-weight:bold;margin-bottom:9px}
+.search-input{width:100%;padding:16px 18px;border:2px solid #344b2d;border-radius:10px;background:#111811;color:white;font-size:1rem;outline:none}
+.search-input:focus{border-color:var(--green);box-shadow:0 0 0 3px #39f00025}
+.search-status{color:var(--muted);font-size:.9rem;margin:9px 2px 0;min-height:1.2em}
+.section{max-width:1200px;margin:auto;padding:20px 18px 40px}
+.category{padding-top:22px;margin-bottom:38px;scroll-margin-top:78px}
+.category h2{font-size:1.8rem;color:var(--green);border-left:5px solid var(--green);padding:4px 0 4px 13px;margin-bottom:6px}
+.hint{color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px}
+.product{background:linear-gradient(145deg,#182018,#0e130e);border:1px solid #2c4026;border-radius:13px;overflow:hidden;transition:transform .2s,border-color .2s}
+.product:hover{transform:translateY(-4px);border-color:var(--green)}
 .product img{width:100%;height:190px;object-fit:contain;background:#fff}
-.info{padding:15px}.info h3{margin:0 0 8px}.info p{color:var(--muted);margin:6px 0}
-.price{font-size:1.25rem;font-weight:bold;color:var(--g)!important}
-.button{display:inline-block;background:var(--g);color:#101510;text-decoration:none;font-weight:bold;padding:12px 18px;border-radius:9px;margin:8px 4px}
+.info{padding:15px}
+.info h3{margin:0 0 8px;font-size:1.05rem}
+.info p{color:var(--muted);margin:6px 0}
+.price{font-size:1.3rem;font-weight:900;color:var(--green)!important}
+.button{display:block;text-align:center;width:100%;margin:12px 0 0}
 .empty{background:var(--panel);border:1px dashed #58713c;border-radius:12px;padding:18px;text-align:center;color:var(--muted)}
-.contact{background:#182018;border-top:1px solid #34432c;text-align:center;padding:28px 18px}.contact p{color:var(--muted);line-height:1.6}
-footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
-
-    .search-wrap{max-width:760px;margin:0 auto 28px;padding:0 18px}
-    .search-label{display:block;color:var(--g);font-weight:bold;margin-bottom:9px}
-    .search-input{width:100%;padding:15px 17px;border:2px solid #405038;border-radius:12px;background:#1a211a;color:#f7faf5;font-size:1rem;outline:none}
-    .search-input:focus{border-color:var(--g);box-shadow:0 0 0 3px #8bcf2830}
-    .search-status{color:var(--muted);font-size:.9rem;margin:9px 2px 0;min-height:1.2em}
-
+.benefits{max-width:1160px;margin:10px auto 30px;padding:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;background:#101710;border:1px solid #2c4026;border-radius:12px;text-align:center}
+.benefits div{padding:8px;color:#e7f2e2;font-weight:bold}.benefits strong{display:block;color:var(--green);font-size:1.3rem;margin-bottom:5px}
+.contact{background:linear-gradient(120deg,#111a10,#080b08);border-top:2px solid var(--green);text-align:center;padding:32px 18px}
+.contact p{color:var(--muted);line-height:1.6}
+.contact .button{display:inline-block;width:auto}
+footer{text-align:center;color:#9ca798;padding:20px;font-size:.85rem;border-top:1px solid #263323}
+[hidden]{display:none!important}
+@media(max-width:650px){header{justify-content:center;text-align:center}.brand-copy{text-align:center}.header-note{text-align:center}.hero{margin:12px;border-radius:12px;min-height:270px;padding:30px 22px}.hero-points{gap:10px;font-size:.9rem}.grid{grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}.product img{height:155px}.info{padding:12px}.info h3{font-size:.95rem}}
 </style></head>
 <body>
-<header><div class="brand-row"><img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA"><div class="brand-copy"><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></div></div></header>
+<header><div class="brand-row"><img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA"><div class="brand-copy"><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></div></div><div class="header-note">Calidad · Precio · Confianza<br>Antofagasta, Chile</div></header>
 <nav>
 <a href="#focos">Focos</a><a href="#accesorios">Accesorios</a><a href="#limpieza">Limpieza</a><a href="#iluminacion">Iluminación</a><a href="#contacto">Contacto</a>
 </nav>
-<section class="hero"><h1>Encuentra tu repuesto</h1><p>Explora nuestro catálogo por categoría. Consulta disponibilidad y precios directamente por WhatsApp.</p></section>
+<section class="hero"><div class="hero-copy"><h1>Todo para tu vehículo<br><span>en un solo lugar</span></h1><p>Encuentra repuestos, accesorios y productos para el cuidado de tu vehículo. Consulta disponibilidad y precios directamente con AUTOSPA.</p><div class="hero-points"><span>✓ Calidad</span><span>✓ Buenos precios</span><span>✓ Atención personalizada</span></div><a class="hero-button" href="#catalogo">VER CATÁLOGO →</a></div></section>
+<section class="benefits"><div><strong>✓</strong>Productos de calidad</div><div><strong>◆</strong>Atención personalizada</div><div><strong>⌖</strong>Estamos en Antofagasta</div></section>
 
 <section class="search-wrap" aria-label="Buscar productos">
   <label class="search-label" for="buscador">BUSCA TU REPUESTO POR NOMBRE O VEHÍCULO</label>
@@ -62,7 +81,7 @@ footer{text-align:center;color:#9ca798;padding:18px;font-size:.85rem}
 <section class="contact" id="contacto"><h2>¿Buscas un repuesto?</h2><p>Escríbenos y consulta disponibilidad y precios.</p>
 <a class="button" href="https://wa.me/56988149426?text=Hola%20AUTOSPA%2C%20quisiera%20consultar%20por%20un%20repuesto" target="_blank" rel="noopener">Consultar por WhatsApp</a>
 <div id="ubicacion"><h3>Visítanos</h3><p>Víctor Jara 645, entre Rendic y Osorno<br>Antofagasta, Chile</p><a class="button" href="https://www.google.com/maps/search/?api=1&query=Victor+Jara+645+Antofagasta+Chile" target="_blank" rel="noopener">Ver ubicación</a></div>
-</section><footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices</footer>
+</section><footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices · Antofagasta, Chile</footer>
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 const categories=[
@@ -83,7 +102,7 @@ function makeCard(p){
  const h=document.createElement("h3");h.textContent=p.nombre||"Repuesto";
  const v=document.createElement("p");v.textContent=p.vehiculo||"";
  const price=document.createElement("p");price.className="price";price.textContent=p.precio||"Consultar precio";
- const a=document.createElement("a");a.className="button";a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));a.target="_blank";a.rel="noopener";a.textContent="Consultar";
+ const a=document.createElement("a");a.className="button";a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));a.target="_blank";a.rel="noopener";a.textContent="Consultar por WhatsApp";
  info.append(h,v,price,a);card.append(img,info);return card;
 }
 const buscador=document.getElementById("buscador");
