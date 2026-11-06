@@ -516,5 +516,12 @@
     "categoria": "Accesorios",
     "precio": "$1800",
     "foto": "imagenes/enchufe-bulbo-y-electroventilador-v16-1793977587641.webp"
+  },
+  {
+    "nombre": "ENCHUFE ALTERNADOR BOSCH BUSES",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$9000",
+    "foto": "imagenes/enchufe-alternador-bosch-buses-1793977665487.webp"
   }
 ]
