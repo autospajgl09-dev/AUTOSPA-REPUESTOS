@@ -607,5 +607,12 @@
     "categoria": "Accesorios",
     "precio": "$1058",
     "foto": "imagenes/soquete-para-foco-del-v16-2-contactos-1793978613549.webp"
+  },
+  {
+    "nombre": "PLUMILLA UNIVERSAL 14\"",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$7500",
+    "foto": "imagenes/plumilla-universal-14-1793978732773.webp"
   }
 ]
