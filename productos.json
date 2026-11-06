@@ -600,5 +600,12 @@
     "categoria": "Accesorios",
     "precio": "$1522",
     "foto": "imagenes/portafusible-cuno-1793978540723.webp"
+  },
+  {
+    "nombre": "SOQUETE PARA FOCO DEL V16 2 CONTACTOS",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1058",
+    "foto": "imagenes/soquete-para-foco-del-v16-2-contactos-1793978613549.webp"
   }
 ]
