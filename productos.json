@@ -572,5 +572,12 @@
     "categoria": "Accesorios",
     "precio": "$1541",
     "foto": "imagenes/enchufe-ampolleta-h4-de-loza-1793978228750.jpg"
+  },
+  {
+    "nombre": "ENCHUFE REGULADOR V16",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$2500",
+    "foto": "imagenes/enchufe-regulador-v16-1793978303369.webp"
   }
 ]
