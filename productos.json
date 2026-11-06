@@ -439,5 +439,12 @@
     "categoria": "Accesorios",
     "precio": "$19610",
     "foto": "imagenes/bomba-de-gasolina-universal-1793976859499.webp"
+  },
+  {
+    "nombre": "ENCHUFE AMPOLLETA H13",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2500",
+    "foto": "imagenes/enchufe-ampolleta-h13-1793976990292.jpg"
   }
 ]
