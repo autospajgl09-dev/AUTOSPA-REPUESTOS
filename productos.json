@@ -159,5 +159,12 @@
     "categoria": "Iluminación",
     "precio": "$3200",
     "foto": "imagenes/ampolleta-h1-1793972796381.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA 12V PY21W BASE BAU15s",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$680",
+    "foto": "imagenes/ampolleta-12v-py21w-base-bau15s-1793972933050.jpg"
   }
 ]
