@@ -593,5 +593,12 @@
     "categoria": "Accesorios",
     "precio": "$4000",
     "foto": "imagenes/enchufe-distribuidor-v16-sentra-ii-1793978465557.webp"
+  },
+  {
+    "nombre": "PORTAFUSIBLE CUNO",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1522",
+    "foto": "imagenes/portafusible-cuno-1793978540723.webp"
   }
 ]
