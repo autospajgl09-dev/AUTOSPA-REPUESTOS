@@ -621,5 +621,12 @@
     "categoria": "Accesorios",
     "precio": "$7500",
     "foto": "imagenes/plumilla-universal-16-1793978798464.webp"
+  },
+  {
+    "nombre": "PLUMILLA UNIVERSAL 18\"",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$7500",
+    "foto": "imagenes/plumilla-universal-18-1793979337409.webp"
   }
 ]
