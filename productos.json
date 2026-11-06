@@ -565,5 +565,12 @@
     "categoria": "Accesorios",
     "precio": "$1100",
     "foto": "imagenes/enchufe-foco-esquinero-v16-1793978150102.webp"
+  },
+  {
+    "nombre": "ENCHUFE AMPOLLETA H4 DE LOZA",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1541",
+    "foto": "imagenes/enchufe-ampolleta-h4-de-loza-1793978228750.jpg"
   }
 ]
