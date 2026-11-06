@@ -446,5 +446,12 @@
     "categoria": "Accesorios",
     "precio": "$2500",
     "foto": "imagenes/enchufe-ampolleta-h13-1793976990292.jpg"
+  },
+  {
+    "nombre": "ENCHUFE DISTRIBUIDOR FORD/NISSAN",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$4500",
+    "foto": "imagenes/enchufe-distribuidor-ford-nissan-1793977043683.jpg"
   }
 ]
