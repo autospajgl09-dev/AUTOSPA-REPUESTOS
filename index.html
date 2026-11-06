@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Catálogo de repuestos AUTOSPA en Antofagasta.">
 <title>AUTOSPA | Repuestos y accesorios</title>
+
 <style>
-:root{--green:#39f000;--green2:#8bff38;--bg:#050705;--panel:#111711;--panel2:#1a2419;--muted:#b9c5b5;--white:#f7fff4}
+:root{--green:#39f000;--green2:#8bff38;--bg:#050705;--panel:#111711;--muted:#b9c5b5;--white:#f7fff4}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
@@ -18,7 +21,7 @@ header{background:linear-gradient(110deg,#050705,#172016 65%,#071007);border-bot
 .subtitle{margin:4px 0 0;color:#dce8d8;font-size:.85rem;font-weight:bold;letter-spacing:1px}
 .header-note{color:var(--muted);font-size:.9rem;text-align:right}
 nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:13px 12px;background:#0b100b;border-bottom:1px solid #263323;position:sticky;top:0;z-index:5}
-nav a{color:white;text-decoration:none;font-weight:bold;padding:10px 16px;border-radius:7px}
+nav a{color:white;text-decoration:none;font-weight:bold;padding:10px 13px;border-radius:7px}
 nav a:hover,nav a:focus{background:var(--green);color:#071006}
 .hero{max-width:1200px;min-height:330px;margin:22px auto 0;padding:45px 5%;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 50%,#24451b 0,#111b10 35%,#080b08 72%);border:1px solid #263b20;border-radius:18px;overflow:hidden}
 .hero-copy{max-width:650px}
@@ -34,7 +37,7 @@ nav a:hover,nav a:focus{background:var(--green);color:#071006}
 .search-input:focus{border-color:var(--green);box-shadow:0 0 0 3px #39f00025}
 .search-status{color:var(--muted);font-size:.9rem;margin:9px 2px 0;min-height:1.2em}
 .section{max-width:1200px;margin:auto;padding:20px 18px 40px}
-.category{padding-top:22px;margin-bottom:38px;scroll-margin-top:78px}
+.category{padding-top:22px;margin-bottom:38px;scroll-margin-top:85px}
 .category h2{font-size:1.8rem;color:var(--green);border-left:5px solid var(--green);padding:4px 0 4px 13px;margin-bottom:6px}
 .hint{color:var(--muted);line-height:1.5}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px}
@@ -48,117 +51,290 @@ nav a:hover,nav a:focus{background:var(--green);color:#071006}
 .button{display:block;text-align:center;width:100%;margin:12px 0 0}
 .empty{background:var(--panel);border:1px dashed #58713c;border-radius:12px;padding:18px;text-align:center;color:var(--muted)}
 .benefits{max-width:1160px;margin:10px auto 30px;padding:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;background:#101710;border:1px solid #2c4026;border-radius:12px;text-align:center}
-.benefits div{padding:8px;color:#e7f2e2;font-weight:bold}.benefits strong{display:block;color:var(--green);font-size:1.3rem;margin-bottom:5px}
+.benefits div{padding:8px;color:#e7f2e2;font-weight:bold}
+.benefits strong{display:block;color:var(--green);font-size:1.3rem;margin-bottom:5px}
 .contact{background:linear-gradient(120deg,#111a10,#080b08);border-top:2px solid var(--green);text-align:center;padding:32px 18px}
 .contact p{color:var(--muted);line-height:1.6}
 .contact .button{display:inline-block;width:auto}
 footer{text-align:center;color:#9ca798;padding:20px;font-size:.85rem;border-top:1px solid #263323}
 [hidden]{display:none!important}
-@media(max-width:650px){header{justify-content:center;text-align:center}.brand-copy{text-align:center}.header-note{text-align:center}.hero{margin:12px;border-radius:12px;min-height:270px;padding:30px 22px}.hero-points{gap:10px;font-size:.9rem}.grid{grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}.product img{height:155px}.info{padding:12px}.info h3{font-size:.95rem}}
-</style></head>
+@media(max-width:650px){
+header{justify-content:center;text-align:center}
+.brand-copy{text-align:center}
+.header-note{text-align:center}
+.hero{margin:12px;border-radius:12px;min-height:270px;padding:30px 22px}
+.hero-points{gap:10px;font-size:.9rem}
+nav{gap:4px}
+nav a{padding:9px 10px;font-size:.9rem}
+.grid{grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
+.product img{height:155px}
+.info{padding:12px}
+.info h3{font-size:.95rem}
+}
+</style>
+</head>
+
 <body>
-<header><div class="brand-row"><img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA"><div class="brand-copy"><p class="brand">AUTOSPA</p><p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p></div></div><div class="header-note">Calidad · Precio · Confianza<br>Antofagasta, Chile</div></header>
+
+<header>
+<div class="brand-row">
+<img class="brand-logo" src="imagenes/logo-autospa.jpg" alt="Logo AUTOSPA">
+<div class="brand-copy">
+<p class="brand">AUTOSPA</p>
+<p class="subtitle">REPUESTOS Y ACCESORIOS AUTOMOTRICES</p>
+</div>
+</div>
+<div class="header-note">Calidad · Precio · Confianza<br>Antofagasta, Chile</div>
+</header>
+
 <nav>
-<a href="#focos">Focos</a><a href="#accesorios">Accesorios</a><a href="#limpieza">Limpieza</a><a href="#iluminacion">Iluminación</a><a href="#contacto">Contacto</a>
+<a href="#opticos-focos">Ópticos - Focos</a>
+<a href="#equipamiento-minero">Equipamiento Minero</a>
+<a href="#electricidad-automotriz">Electricidad Automotriz</a>
+<a href="#accesorios">Accesorios</a>
+<a href="#limpieza">Limpieza</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
 </nav>
-<section class="hero"><div class="hero-copy"><h1>Todo para tu vehículo<br><span>en un solo lugar</span></h1><p>Encuentra repuestos, accesorios y productos para el cuidado de tu vehículo. Consulta disponibilidad y precios directamente con AUTOSPA.</p><div class="hero-points"><span>✓ Calidad</span><span>✓ Buenos precios</span><span>✓ Atención personalizada</span></div><a class="hero-button" href="#catalogo">VER CATÁLOGO →</a></div></section>
-<section class="benefits"><div><strong>✓</strong>Productos de calidad</div><div><strong>◆</strong>Atención personalizada</div><div><strong>⌖</strong>Estamos en Antofagasta</div></section>
+
+<section class="hero">
+<div class="hero-copy">
+<h1>Todo para tu vehículo<br><span>en un solo lugar</span></h1>
+<p>Encuentra repuestos, accesorios y productos para el cuidado de tu vehículo. Consulta disponibilidad y precios directamente con AUTOSPA.</p>
+<div class="hero-points">
+<span>✓ Calidad</span>
+<span>✓ Buenos precios</span>
+<span>✓ Atención personalizada</span>
+</div>
+<a class="hero-button" href="#catalogo">VER CATÁLOGO →</a>
+</div>
+</section>
+
+<section class="benefits">
+<div><strong>✓</strong>Productos de calidad</div>
+<div><strong>◆</strong>Atención personalizada</div>
+<div><strong>⌖</strong>Estamos en Antofagasta</div>
+</section>
 
 <section class="search-wrap" aria-label="Buscar productos">
-  <label class="search-label" for="buscador">BUSCA TU REPUESTO POR NOMBRE O VEHÍCULO</label>
-  <input id="buscador" class="search-input" type="search"
-    placeholder="Ej.: Samsung SM3, Toyota RAV4, óptico delantero..."
-    autocomplete="off">
-  <p id="search-status" class="search-status" aria-live="polite">Escribe una marca, modelo o repuesto para filtrar el catálogo.</p>
+<label class="search-label" for="buscador">BUSCA TU REPUESTO POR NOMBRE O VEHÍCULO</label>
+<input id="buscador" class="search-input" type="search" placeholder="Ej.: Samsung SM3, Toyota RAV4, óptico delantero..." autocomplete="off">
+<p id="search-status" class="search-status" aria-live="polite">Escribe una marca, modelo o repuesto para filtrar el catálogo.</p>
 </section>
 
 <main class="section" id="catalogo">
-<section class="category" id="focos"><h2>Focos</h2><p class="hint">Ópticos, focos delanteros y traseros.</p><div id="grid-focos" class="grid"></div><div id="empty-focos" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
-<section class="category" id="accesorios"><h2>Accesorios</h2><p class="hint">Accesorios para tu vehículo.</p><div id="grid-accesorios" class="grid"></div><div id="empty-accesorios" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
-<section class="category" id="limpieza"><h2>Limpieza</h2><p class="hint">Productos para el cuidado y limpieza automotriz.</p><div id="grid-limpieza" class="grid"></div><div id="empty-limpieza" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
-<section class="category" id="iluminacion"><h2>Iluminación</h2><p class="hint">Ampolletas, luces LED y soluciones de iluminación.</p><div id="grid-iluminacion" class="grid"></div><div id="empty-iluminacion" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div></section>
+
+<section class="category" id="opticos-focos">
+<h2>Ópticos - Focos</h2>
+<p class="hint">Ópticos, focos delanteros y traseros.</p>
+<div id="grid-opticos-focos" class="grid"></div>
+<div id="empty-opticos-focos" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
+<section class="category" id="equipamiento-minero">
+<h2>Equipamiento Minero</h2>
+<p class="hint">Equipamiento, accesorios y productos para minería.</p>
+<div id="grid-equipamiento-minero" class="grid"></div>
+<div id="empty-equipamiento-minero" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
+<section class="category" id="electricidad-automotriz">
+<h2>Electricidad Automotriz</h2>
+<p class="hint">Ampolletas, luces LED, enchufes, soquetes y componentes eléctricos.</p>
+<div id="grid-electricidad-automotriz" class="grid"></div>
+<div id="empty-electricidad-automotriz" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
+<section class="category" id="accesorios">
+<h2>Accesorios</h2>
+<p class="hint">Accesorios para tu vehículo.</p>
+<div id="grid-accesorios" class="grid"></div>
+<div id="empty-accesorios" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
+<section class="category" id="limpieza">
+<h2>Limpieza</h2>
+<p class="hint">Productos para el cuidado y limpieza automotriz.</p>
+<div id="grid-limpieza" class="grid"></div>
+<div id="empty-limpieza" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
+<section class="category" id="productos">
+<h2>Productos</h2>
+<p class="hint">Otros productos disponibles en AUTOSPA.</p>
+<div id="grid-productos" class="grid"></div>
+<div id="empty-productos" class="empty" hidden>Próximamente agregaremos productos de esta categoría.</div>
+</section>
+
 </main>
-<section class="contact" id="contacto"><h2>¿Buscas un repuesto?</h2><p>Escríbenos y consulta disponibilidad y precios.</p>
+
+<section class="contact" id="contacto">
+<h2>¿Buscas un repuesto?</h2>
+<p>Escríbenos y consulta disponibilidad y precios.</p>
 <a class="button" href="https://wa.me/56988149426?text=Hola%20AUTOSPA%2C%20quisiera%20consultar%20por%20un%20repuesto" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-<div id="ubicacion"><h3>Visítanos</h3><p>Víctor Jara 645, entre Rendic y Osorno<br>Antofagasta, Chile</p><a class="button" href="https://www.google.com/maps/search/?api=1&query=Victor+Jara+645+Antofagasta+Chile" target="_blank" rel="noopener">Ver ubicación</a></div>
-</section><footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices · Antofagasta, Chile</footer>
+<div id="ubicacion">
+<h3>Visítanos</h3>
+<p>Víctor Jara 645, entre Rendic y Osorno<br>Antofagasta, Chile</p>
+<a class="button" href="https://www.google.com/maps/search/?api=1&query=Victor+Jara+645+Antofagasta+Chile" target="_blank" rel="noopener">Ver ubicación</a>
+</div>
+</section>
+
+<footer>© <span id="year"></span> AUTOSPA · Repuestos y accesorios automotrices · Antofagasta, Chile</footer>
+
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
+
 const categories=[
- {name:"Focos",id:"focos"},{name:"Accesorios",id:"accesorios"},
- {name:"Limpieza",id:"limpieza"},{name:"Iluminación",id:"iluminacion"}
+{name:"Ópticos - Focos",id:"opticos-focos"},
+{name:"Equipamiento Minero",id:"equipamiento-minero"},
+{name:"Electricidad Automotriz",id:"electricidad-automotriz"},
+{name:"Accesorios",id:"accesorios"},
+{name:"Limpieza",id:"limpieza"},
+{name:"Productos",id:"productos"}
 ];
+
+function normalizar(texto){
+return String(texto||"").toLocaleLowerCase("es")
+.normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();
+}
+
 function getCategory(p){
- if(categories.some(c=>c.name===p.categoria)) return p.categoria;
- const t=((p.nombre||"")+" "+(p.vehiculo||"")).toLowerCase();
- if(t.includes("optico")||t.includes("óptico")||t.includes("foco")) return "Focos";
- return "Accesorios";
+const c=normalizar(p.categoria||"");
+
+const equivalencias={
+"focos":"opticos-focos",
+"opticos-focos":"opticos-focos",
+"accesorios":"accesorios",
+"limpieza":"limpieza",
+"iluminacion":"electricidad-automotriz",
+"electricidad automotriz":"electricidad-automotriz",
+"equipamiento minero":"equipamiento-minero",
+"productos":"productos"
+};
+
+if(equivalencias[c]){
+return categories.find(cat=>cat.id===equivalencias[c]).name;
 }
+
+const t=normalizar((p.nombre||"")+" "+(p.vehiculo||""));
+
+if(t.includes("optico")||t.includes("foco"))return "Ópticos - Focos";
+
+if(t.includes("minero")||t.includes("mineria")||t.includes("minera"))return "Equipamiento Minero";
+
+if(t.includes("ampolleta")||t.includes("led")||t.includes("soquete")||t.includes("enchufe")||t.includes("electricidad"))return "Electricidad Automotriz";
+
+return "Productos";
+}
+
 function makeCard(p){
- const card=document.createElement("article");card.className="product";
- card.dataset.search=normalizar([p.nombre||"",p.vehiculo||"",p.categoria||""].join(" "));
- const img=document.createElement("img");img.src=p.foto||"";img.alt=p.nombre||"Repuesto AUTOSPA";img.loading="lazy";
- const info=document.createElement("div");info.className="info";
- const h=document.createElement("h3");h.textContent=p.nombre||"Repuesto";
- const v=document.createElement("p");v.textContent=p.vehiculo||"";
- const price=document.createElement("p");price.className="price";price.textContent=p.precio||"Consultar precio";
- const a=document.createElement("a");a.className="button";a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));a.target="_blank";a.rel="noopener";a.textContent="Consultar por WhatsApp";
- info.append(h,v,price,a);card.append(img,info);return card;
+const card=document.createElement("article");
+card.className="product";
+card.dataset.search=normalizar([p.nombre||"",p.vehiculo||"",p.categoria||""].join(" "));
+
+const img=document.createElement("img");
+img.src=p.foto||"";
+img.alt=p.nombre||"Repuesto AUTOSPA";
+img.loading="lazy";
+
+const info=document.createElement("div");
+info.className="info";
+
+const h=document.createElement("h3");
+h.textContent=p.nombre||"Repuesto";
+
+const v=document.createElement("p");
+v.textContent=p.vehiculo||"";
+
+const price=document.createElement("p");
+price.className="price";
+price.textContent=p.precio||"Consultar precio";
+
+const a=document.createElement("a");
+a.className="button";
+a.href="https://wa.me/56988149426?text="+encodeURIComponent("Hola AUTOSPA, consulto por: "+(p.nombre||"repuesto")+" - "+(p.vehiculo||""));
+a.target="_blank";
+a.rel="noopener";
+a.textContent="Consultar por WhatsApp";
+
+info.append(h,v,price,a);
+card.append(img,info);
+
+return card;
 }
+
 const buscador=document.getElementById("buscador");
 const estadoBusqueda=document.getElementById("search-status");
 let tarjetasPorCategoria={};
 
-function normalizar(texto){return String(texto||"").toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
-
 function filtrarProductos(){
- const term=normalizar(buscador.value);
- let total=0;
- categories.forEach(c=>{
-  const section=document.getElementById(c.id);
-  const cards=tarjetasPorCategoria[c.id]||[];
-  let visibles=0;
-  cards.forEach(card=>{
-   const match=!term||card.dataset.search.includes(term);
-   card.hidden=!match;
-   if(match)visibles++;
-  });
-  const empty=document.getElementById("empty-"+c.id);
-  if(term){
-   section.hidden=visibles===0;
-   empty.hidden=true;
-  }else{
-   section.hidden=false;
-   empty.hidden=cards.length>0;
-  }
-  total+=visibles;
- });
- if(term){
-  estadoBusqueda.textContent=total
-   ? total+" producto(s) encontrado(s) para: "+buscador.value
-   : "No encontramos productos con ese nombre o vehículo. Prueba con otra búsqueda.";
- }else{
-  estadoBusqueda.textContent="Escribe una marca, modelo o repuesto para filtrar el catálogo.";
- }
+const term=normalizar(buscador.value);
+let total=0;
+
+categories.forEach(c=>{
+const section=document.getElementById(c.id);
+const cards=tarjetasPorCategoria[c.id]||[];
+let visibles=0;
+
+cards.forEach(card=>{
+const match=!term||card.dataset.search.includes(term);
+card.hidden=!match;
+if(match)visibles++;
+});
+
+const empty=document.getElementById("empty-"+c.id);
+
+if(term){
+section.hidden=visibles===0;
+empty.hidden=true;
+}else{
+section.hidden=false;
+empty.hidden=cards.length>0;
+}
+
+total+=visibles;
+});
+
+if(term){
+estadoBusqueda.textContent=total
+?total+" producto(s) encontrado(s) para: "+buscador.value
+:"No encontramos productos con ese nombre o vehículo. Prueba con otra búsqueda.";
+}else{
+estadoBusqueda.textContent="Escribe una marca, modelo o repuesto para filtrar el catálogo.";
+}
 }
 
 buscador.addEventListener("input",filtrarProductos);
 
-fetch("./productos.json?actualizacion="+Date.now()).then(r=>{if(!r.ok)throw new Error("No se pudo leer el catálogo");return r.json()})
+fetch("./productos.json?actualizacion="+Date.now())
+.then(r=>{
+if(!r.ok)throw new Error("No se pudo leer el catálogo");
+return r.json();
+})
 .then(items=>{
- if(!Array.isArray(items))throw new Error("Formato de catálogo incorrecto");
- categories.forEach(c=>{
-  const products=items.filter(p=>getCategory(p)===c.name);
-  const grid=document.getElementById("grid-"+c.id);
-  tarjetasPorCategoria[c.id]=products.map(p=>makeCard(p));
-  tarjetasPorCategoria[c.id].forEach(card=>grid.append(card));
-  document.getElementById("empty-"+c.id).hidden=products.length>0;
- });
- filtrarProductos();
+if(!Array.isArray(items))throw new Error("Formato de catálogo incorrecto");
+
+categories.forEach(c=>{
+const products=items.filter(p=>getCategory(p)===c.name);
+const grid=document.getElementById("grid-"+c.id);
+
+tarjetasPorCategoria[c.id]=products.map(p=>makeCard(p));
+
+tarjetasPorCategoria[c.id].forEach(card=>grid.append(card));
+
+document.getElementById("empty-"+c.id).hidden=products.length>0;
+});
+
+filtrarProductos();
 })
 .catch(()=>{
- categories.forEach(c=>{
-  const e=document.getElementById("empty-"+c.id);e.hidden=false;e.textContent="No pudimos cargar los productos en este momento. Consulta por WhatsApp.";
- });
+categories.forEach(c=>{
+const e=document.getElementById("empty-"+c.id);
+e.hidden=false;
+e.textContent="No pudimos cargar los productos en este momento. Consulta por WhatsApp.";
 });
-</script></body></html>
+});
+</script>
+
+</body>
+</html>
