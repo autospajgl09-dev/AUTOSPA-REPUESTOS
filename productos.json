@@ -404,5 +404,12 @@
     "categoria": "Accesorios",
     "precio": "$8900",
     "foto": "imagenes/banderin-1793976443618.jpg"
+  },
+  {
+    "nombre": "RESORTE DE PERTIGA",
+    "vehiculo": "MINERA",
+    "categoria": "Accesorios",
+    "precio": "$18900",
+    "foto": "imagenes/resorte-de-pertiga-1793976507753.jpg"
   }
 ]
