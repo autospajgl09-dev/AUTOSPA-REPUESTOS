@@ -579,5 +579,12 @@
     "categoria": "Accesorios",
     "precio": "$2500",
     "foto": "imagenes/enchufe-regulador-v16-1793978303369.webp"
+  },
+  {
+    "nombre": "SOQUETE FOCO TRASERO V16",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1100",
+    "foto": "imagenes/soquete-foco-trasero-v16-1793978386173.webp"
   }
 ]
