@@ -551,5 +551,12 @@
     "categoria": "Accesorios",
     "precio": "$2400",
     "foto": "imagenes/enchufe-luces-buses-mascarello-1793977989314.jpg"
+  },
+  {
+    "nombre": "ENCHUFE PORCELANA 2 PIN AMPOLLETA 9005",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1810",
+    "foto": "imagenes/enchufe-porcelana-2-pin-ampolleta-9005-1793978067192.webp"
   }
 ]
