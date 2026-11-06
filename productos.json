@@ -1,4 +1,4 @@
-  [
+[
   {
     "nombre": "OPTICO DELANTERO IZQUIERDO",
     "vehiculo": "SAMSUNG SM3 2015",
@@ -390,5 +390,12 @@
     "categoria": "Iluminación",
     "precio": "$2200",
     "foto": "imagenes/ampolleta-12v-w21w-w3x16d-t20-1793973314065.jpg"
+  },
+  {
+    "nombre": "PERTIGAS",
+    "vehiculo": "MINERAS",
+    "categoria": "Accesorios",
+    "precio": "$99900",
+    "foto": "imagenes/pertigas-1793976337663.jpg"
   }
 ]
