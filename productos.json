@@ -474,5 +474,12 @@
     "categoria": "Accesorios",
     "precio": "$1300",
     "foto": "imagenes/enchufe-3-patas-1793977240635.jpg"
+  },
+  {
+    "nombre": "ENCHUFE HEMBRA 2 PINES PARA ALTERNADO V16",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2000",
+    "foto": "imagenes/enchufe-hembra-2-pines-para-alternado-v16-1793977305190.webp"
   }
 ]
