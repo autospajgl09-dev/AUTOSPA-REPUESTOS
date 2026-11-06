@@ -495,5 +495,12 @@
     "categoria": "Accesorios",
     "precio": "$1530",
     "foto": "imagenes/enchufe-chapa-encendido-nissan-1793977412082.webp"
+  },
+  {
+    "nombre": "ENCHUFE FARO SILVIN H4",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2000",
+    "foto": "imagenes/enchufe-faro-silvin-h4-1793977471498.webp"
   }
 ]
