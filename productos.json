@@ -425,5 +425,12 @@
     "categoria": "Accesorios",
     "precio": "$4500",
     "foto": "imagenes/terminal-bateria-flanche-a-un-lado-bronce-1793976739647.jpg"
+  },
+  {
+    "nombre": "SET TERMINAL DE BATERÍA METÁLICO",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$8100",
+    "foto": "imagenes/set-terminal-de-bateria-metalico-1793976790645.jpg"
   }
 ]
