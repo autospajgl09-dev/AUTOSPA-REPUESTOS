@@ -502,5 +502,12 @@
     "categoria": "Accesorios",
     "precio": "$2000",
     "foto": "imagenes/enchufe-faro-silvin-h4-1793977471498.webp"
+  },
+  {
+    "nombre": "ENCHUFE PORCELANA 5 PIN RELAY",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$1553",
+    "foto": "imagenes/enchufe-porcelana-5-pin-relay-1793977534832.webp"
   }
 ]
