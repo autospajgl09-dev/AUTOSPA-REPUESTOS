@@ -397,5 +397,12 @@
     "categoria": "Accesorios",
     "precio": "$99900",
     "foto": "imagenes/pertigas-1793976337663.jpg"
+  },
+  {
+    "nombre": "BANDERIN",
+    "vehiculo": "MINERA",
+    "categoria": "Accesorios",
+    "precio": "$8900",
+    "foto": "imagenes/banderin-1793976443618.jpg"
   }
 ]
