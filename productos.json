@@ -488,5 +488,12 @@
     "categoria": "Accesorios",
     "precio": "$2880",
     "foto": "imagenes/enchufe-plastico-4-pin-para-relay-1793977359063.webp"
+  },
+  {
+    "nombre": "ENCHUFE CHAPA ENCENDIDO NISSAN",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$1530",
+    "foto": "imagenes/enchufe-chapa-encendido-nissan-1793977412082.webp"
   }
 ]
