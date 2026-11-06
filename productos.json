@@ -523,5 +523,12 @@
     "categoria": "Accesorios",
     "precio": "$9000",
     "foto": "imagenes/enchufe-alternador-bosch-buses-1793977665487.webp"
+  },
+  {
+    "nombre": "ENCHUFE RELAY",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2200",
+    "foto": "imagenes/enchufe-relay-1793977720444.webp"
   }
 ]
