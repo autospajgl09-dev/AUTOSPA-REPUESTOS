@@ -432,5 +432,12 @@
     "categoria": "Accesorios",
     "precio": "$8100",
     "foto": "imagenes/set-terminal-de-bateria-metalico-1793976790645.jpg"
+  },
+  {
+    "nombre": "BOMBA DE GASOLINA UNIVERSAL",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$19610",
+    "foto": "imagenes/bomba-de-gasolina-universal-1793976859499.webp"
   }
 ]
