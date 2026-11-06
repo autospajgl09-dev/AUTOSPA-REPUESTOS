@@ -418,5 +418,12 @@
     "categoria": "Focos",
     "precio": "$29900",
     "foto": "imagenes/neblinero-led-1793976640806.jpg"
+  },
+  {
+    "nombre": "TERMINAL BATERÍA FLANCHE A UN LADO BRONCE",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$4500",
+    "foto": "imagenes/terminal-bateria-flanche-a-un-lado-bronce-1793976739647.jpg"
   }
 ]
