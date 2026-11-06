@@ -411,5 +411,12 @@
     "categoria": "Accesorios",
     "precio": "$18900",
     "foto": "imagenes/resorte-de-pertiga-1793976507753.jpg"
+  },
+  {
+    "nombre": "NEBLINERO LED",
+    "vehiculo": "FOG ANGEL EYES",
+    "categoria": "Focos",
+    "precio": "$29900",
+    "foto": "imagenes/neblinero-led-1793976640806.jpg"
   }
 ]
