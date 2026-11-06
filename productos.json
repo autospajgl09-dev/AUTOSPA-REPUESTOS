@@ -537,5 +537,12 @@
     "categoria": "Accesorios",
     "precio": "$2000",
     "foto": "imagenes/enchufe-relay-4-5-patas-con-esamble-para-unir-1793977835635.webp"
+  },
+  {
+    "nombre": "SOQUETE FOCO V16 AMPOLLETA T10",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1058",
+    "foto": "imagenes/soquete-foco-v16-ampolleta-t10-1793977916688.webp"
   }
 ]
