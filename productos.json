@@ -544,5 +544,12 @@
     "categoria": "Accesorios",
     "precio": "$1058",
     "foto": "imagenes/soquete-foco-v16-ampolleta-t10-1793977916688.webp"
+  },
+  {
+    "nombre": "ENCHUFE LUCES BUSES MASCARELLO",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$2400",
+    "foto": "imagenes/enchufe-luces-buses-mascarello-1793977989314.jpg"
   }
 ]
