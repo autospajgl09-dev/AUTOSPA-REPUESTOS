@@ -460,5 +460,12 @@
     "categoria": "Accesorios",
     "precio": "$5800",
     "foto": "imagenes/enchufe-porcelana-ampolleta-h13-1793977102956.jpg"
+  },
+  {
+    "nombre": "ENCHUFE AMPOLLETA",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$1900",
+    "foto": "imagenes/enchufe-ampolleta-1793977175066.jpg"
   }
 ]
