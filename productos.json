@@ -467,5 +467,12 @@
     "categoria": "Accesorios",
     "precio": "$1900",
     "foto": "imagenes/enchufe-ampolleta-1793977175066.jpg"
+  },
+  {
+    "nombre": "ENCHUFE 3 PATAS",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$1300",
+    "foto": "imagenes/enchufe-3-patas-1793977240635.jpg"
   }
 ]
