@@ -187,5 +187,12 @@
     "categoria": "Iluminación",
     "precio": "$500",
     "foto": "imagenes/ampolleta-12v-w3w-base-w2-1x9-5-t10-1793973183781.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA 12V W16W BASE W2,1X9,5d T15 cola pez",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$550",
+    "foto": "imagenes/ampolleta-12v-w16w-base-w2-1x9-5d-t15-cola-pez-1793973251310.jpg"
   }
 ]
