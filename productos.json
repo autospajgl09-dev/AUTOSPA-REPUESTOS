@@ -530,5 +530,12 @@
     "categoria": "Accesorios",
     "precio": "$2200",
     "foto": "imagenes/enchufe-relay-1793977720444.webp"
+  },
+  {
+    "nombre": "ENCHUFE RELAY 4/5 PATAS CON ESAMBLE PARA UNIR",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$2000",
+    "foto": "imagenes/enchufe-relay-4-5-patas-con-esamble-para-unir-1793977835635.webp"
   }
 ]
