@@ -166,5 +166,12 @@
     "categoria": "Iluminación",
     "precio": "$680",
     "foto": "imagenes/ampolleta-12v-py21w-base-bau15s-1793972933050.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA 12V P21/5w BASE BAY 15D",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$650",
+    "foto": "imagenes/ampolleta-12v-p21-5w-base-bay-15d-1793973037984.jpg"
   }
 ]
