@@ -509,5 +509,12 @@
     "categoria": "Accesorios",
     "precio": "$1553",
     "foto": "imagenes/enchufe-porcelana-5-pin-relay-1793977534832.webp"
+  },
+  {
+    "nombre": "ENCHUFE BULBO Y ELECTROVENTILADOR V16",
+    "vehiculo": "BRM",
+    "categoria": "Accesorios",
+    "precio": "$1800",
+    "foto": "imagenes/enchufe-bulbo-y-electroventilador-v16-1793977587641.webp"
   }
 ]
