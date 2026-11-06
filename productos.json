@@ -558,5 +558,12 @@
     "categoria": "Accesorios",
     "precio": "$1810",
     "foto": "imagenes/enchufe-porcelana-2-pin-ampolleta-9005-1793978067192.webp"
+  },
+  {
+    "nombre": "ENCHUFE FOCO ESQUINERO V16",
+    "vehiculo": "BMR",
+    "categoria": "Accesorios",
+    "precio": "$1100",
+    "foto": "imagenes/enchufe-foco-esquinero-v16-1793978150102.webp"
   }
 ]
