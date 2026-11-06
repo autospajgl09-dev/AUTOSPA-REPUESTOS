@@ -180,5 +180,12 @@
     "categoria": "Iluminación",
     "precio": "$650",
     "foto": "imagenes/ampolleta-12v-p21w-base-ba15s-1793973112333.jpg"
+  },
+  {
+    "nombre": "AMPOLLETA 12V W3W BASE W2,1x9,5 T10",
+    "vehiculo": "BOSCH",
+    "categoria": "Iluminación",
+    "precio": "$500",
+    "foto": "imagenes/ampolleta-12v-w3w-base-w2-1x9-5-t10-1793973183781.jpg"
   }
 ]
