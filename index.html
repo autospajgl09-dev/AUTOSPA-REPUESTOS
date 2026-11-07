@@ -198,8 +198,34 @@ return String(texto||"").toLocaleLowerCase("es")
 .normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();
 }
 
+
 function getCategory(p){
 const c=normalizar(p.categoria||"");
+const t=normalizar((p.nombre||"")+" "+(p.vehiculo||""));
+
+if(t.includes("tapa neblinero")||t.includes("mascara")||t.includes("plumilla")||t.includes("bomba de gasolina")){
+return "Accesorios";
+}
+
+if(t.includes("optico")||t.includes("foco")||t.includes("neblinero")){
+return "Ópticos - Focos";
+}
+
+if(t.includes("pertiga")||t.includes("banderin")||t.includes("minero")||t.includes("mineria")||t.includes("minera")||t.includes("alarma retroceso")||t.includes("farol faena")){
+return "Equipamiento Minero";
+}
+
+if(t.includes("anticongelante")||t.includes("refrigerante")||t.includes("liquido de frenos")||t.includes("aflojatodo")){
+return "Productos";
+}
+
+if(t.includes("ampolleta")||t.includes("enchufe")||t.includes("soquete")||t.includes("terminal bateria")||t.includes("portafusible")||t.includes("electricidad")){
+return "Electricidad Automotriz";
+}
+
+if(t.includes("limpiador")||t.includes("shampoo")||t.includes("ambientador")||t.includes("silicona")||t.includes("renovador de goma")){
+return "Limpieza";
+}
 
 const equivalencias={
 "focos":"opticos-focos",
@@ -213,16 +239,9 @@ const equivalencias={
 };
 
 if(equivalencias[c]){
-return categories.find(cat=>cat.id===equivalencias[c]).name;
+const categoria=categories.find(cat=>cat.id===equivalencias[c]);
+if(categoria)return categoria.name;
 }
-
-const t=normalizar((p.nombre||"")+" "+(p.vehiculo||""));
-
-if(t.includes("optico")||t.includes("foco"))return "Ópticos - Focos";
-
-if(t.includes("minero")||t.includes("mineria")||t.includes("minera"))return "Equipamiento Minero";
-
-if(t.includes("ampolleta")||t.includes("led")||t.includes("soquete")||t.includes("enchufe")||t.includes("electricidad"))return "Electricidad Automotriz";
 
 return "Productos";
 }
