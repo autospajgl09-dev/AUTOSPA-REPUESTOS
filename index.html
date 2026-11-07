@@ -199,11 +199,14 @@ return String(texto||"").toLocaleLowerCase("es")
 }
 
 
+
 function getCategory(p){
 const c=normalizar(p.categoria||"");
 const t=normalizar((p.nombre||"")+" "+(p.vehiculo||""));
 
 if(t.includes("tapa neblinero")||t.includes("mascara")||t.includes("plumilla")){
+return "Accesorios";
+}
 
 if(t.includes("optico")||t.includes("foco")||t.includes("neblinero")){
 return "Ópticos - Focos";
@@ -218,6 +221,8 @@ return "Productos";
 }
 
 if(t.includes("ampolleta")||t.includes("enchufe")||t.includes("soquete")||t.includes("terminal bateria")||t.includes("terminal metalico")||t.includes("set terminal")||t.includes("portafusible")||t.includes("bomba de gasolina")||t.includes("electricidad")){
+return "Electricidad Automotriz";
+}
 
 if(t.includes("limpiador")||t.includes("shampoo")||t.includes("ambientador")||t.includes("silicona")||t.includes("renovador de goma")){
 return "Limpieza";
@@ -241,6 +246,7 @@ if(categoria)return categoria.name;
 
 return "Productos";
 }
+
 
 function makeCard(p){
 const card=document.createElement("article");
